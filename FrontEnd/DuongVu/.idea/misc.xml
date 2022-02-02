@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/drawable/linear_layout_rounded_corner.xml" value="0.2359375" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/drawable/rounded_corner_view.xml" value="0.2359375" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_allgroups.xml" value="0.21979166666666666" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_alluser.xml" value="0.21979166666666666" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_allusers.xml" value="0.25" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_chat.xml" value="0.215625" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_creategroup.xml" value="0.21979166666666666" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_group.xml" value="0.25" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_joinedgroups.xml" value="0.215625" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_newgroup.xml" value="0.21979166666666666" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_newuser.xml" value="0.215625" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_user_groups.xml" value="0.215625" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/activity_userprofile.xml" value="0.1" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/content_main.xml" value="0.215625" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/fragment_first.xml" value="0.215625" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/fragment_second.xml" value="0.215625" />
+        <entry key="..\:/workspace/coms 309/2_ns_8/Backend/DuongVu/app/src/main/res/layout/fuckjuul.xml" value="0.21979166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

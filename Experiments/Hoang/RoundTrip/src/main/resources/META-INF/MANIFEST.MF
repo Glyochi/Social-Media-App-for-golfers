@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: src\main\java\com\example\roundtrip\RoundTripApplication.jav
+ a
+Class-Path: Roundtrip.jar
+

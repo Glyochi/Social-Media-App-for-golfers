@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/NewGroup_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/newGroup_textBoxes"
+            android:layout_width="340dp"
+            android:layout_height="380dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/newGroup_textView_createNewGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ree" />
+
+            <TextView
+                android:id="@+id/newGroup_textView_groupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Groups's name" />
+
+            <EditText
+                android:id="@+id/newGroup_textBox_groupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginTop="5dp"
+                android:text="GroupName123" />
+
+            <TextView
+                android:id="@+id/newGroup_textView_groupDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Group's description" />
+
+            <EditText
+                android:id="@+id/newGroup_textBox_groupDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginTop="5dp"
+                android:text="THisIsIndeedAGroup"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newGroup_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/newGroup_button_createNewGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft ="115dp"
+                android:layout_marginTop="@dimen/cardview_default_elevation"
+                android:text="Create new group"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

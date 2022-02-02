@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/group_profile"
+            android:layout_width="match_parent"
+            android:layout_height="316dp"
+            android:background="@color/blueGreen"
+            >
+
+            <ImageView
+                android:id="@+id/group_imageView_wallpaper"
+                android:layout_width="600dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="-16dp"
+                android:layout_marginLeft="-100dp"
+
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <LinearLayout
+                android:id="@+id/group_layout_profileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal">
+
+
+<!--            CIRCLE PROFILE PICTURE                 -->
+                <RelativeLayout
+                    android:id="@+id/userProfile_layout_profilePictureLayout"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="15dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userProfile_imageView_profilePictureBorder"
+                        android:layout_width="156dp"
+                        android:layout_height="157dp"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userProfile_imageView_profilePicture"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/group_layout_groupInfo"
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/group_textView_groupName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/rounded_corner_view"
+                        android:backgroundTint="@color/blueGreen"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/azure"
+                        android:text="Default display name"
+                        />
+                    <TextView
+                        android:id="@+id/group_textView_groupDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="20dp"
+                        android:background="@drawable/rounded_corner_view"
+                        android:backgroundTint="@color/blueGreen"
+                        android:textColor="@color/azure"
+                        android:text="Default user score" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/userProfile_layout_layoutUsedForHalfLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/userProfile_buttonsLeft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/userProfile_button_groups"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Groups"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/userProfile_button_friends"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Friends"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/userProfile_button_settings"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Settings"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userProfile_buttonsRight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/userProfile_button_allGroups"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="All Groups"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/userProfile_button_allUsers"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="All Users"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/userProfile_button_testSocket"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Test socket"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

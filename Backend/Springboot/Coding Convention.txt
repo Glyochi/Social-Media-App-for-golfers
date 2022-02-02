@@ -1,0 +1,80 @@
+*_*_*_*_Controller function arrangments"
+		function mapped to a HTTP type must be under the comment the specify what functions are below it
+	Exp: 
+	//-----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------
+	//GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST _ GET REQUEST
+	//-----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------
+	
+		@GetMapping("group/get/getAllGroup")
+		List<GroupModel> Get_AllGroup(){
+		        return groupRepository.findAll();
+		}
+
+
+*_*_*_*_Controller function names:
+		@GetMapping("model/B/pathVariables")
+		returnType B_C{}; or returnType B{}; 
+		where:
+			The first letter of a word in http path is always non-capital (even for A,B)
+			B is the function name - capitalize the first letter of each word
+			C is either ByPath/ByBody/'blank' if the function doesn't require parameters
+			
+	Exp:
+		@GetMapping("group/getGroupMembers/{groupID}")
+    		Set<UserModel> getGroupMembers_ByPath(@PathVariable long groupID){
+        		return groupRepository.getById(groupID).getMembers();
+    		}
+
+		@PostMapping("group/newGroup")
+    		GroupModel newGroup_ByBody(@RequestBody GroupModel newGroup){
+        		groupRepository.save(newGroup);
+        		return newGroup;
+    		}
+
+
+*_*_*_*_pathVariable format:
+		"variableName/{variableValue/variableID}"
+		
+		if the function requires an obj to call a function then specify that functionCaller ID before
+		providing the parameters.
+	Exp:
+		//Without the need for function caller
+		@DeleteMapping("user/deleteUser/{userID}")
+		void deleteUser_ByPath(@PathVariable long userID){
+		        userRepository.deleteById(userID);
+		}
+
+
+		//With the need for function caller
+		@PutMapping ("user/giveAdminRoleInGroup/adminID/{adminID}/group/{groupID}/user/{userID}")
+    		public boolean Put_GiveAdminRoleInGroup_ByPath(@PathVariable long adminID, @PathVariable long groupID, @PathVariable long userID) throws Exception {
+	        	UserModel admin = userRepository.getById(adminID);
+		        GroupModel group = groupRepository.getById(groupID);
+		        UserModel user = userRepository.getById(userID);
+	
+		
+		        if(admin.giveAdminRole(group, user)) {
+		            groupRepository.save(group);
+		            userRepository.save(user);
+	        	    return true;
+	        	}
+	        	return false;
+		}
+
+
+
+*_*_*_*_REQUIRE ATTENTION keyword:
+		when unsure about part of codes/have to write temporary codes for testing, place down a '//REQUIRE ATTENTION' + 
+		reasons so that we don't forget about it.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+<<<<<<< HEAD
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration />
+    </facet>
+  </component>
+=======
+>>>>>>> cdf756457a9705ad010a57c08f4011b61c3b40e0
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Alex" isTestSource="false" />
+<<<<<<< HEAD
+      <sourceFolder url="file://$MODULE_DIR$/Hoang" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hrijul" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Koshal" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 31 Platform" jdkType="Android SDK" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/Hrijul" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+>>>>>>> cdf756457a9705ad010a57c08f4011b61c3b40e0
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,58 @@
+# Example  .gitlab-ci.yml file
+stages:
+  - mavenbuild
+  - mavendeploy
+  - androidbuild
+  - androidtest
+
+maven-build:   #this is a JOB
+  stage: mavenbuild  #do make a stage with same name!
+  tags:
+   - backend
+  script:
+    - cd Backend
+    - cd SpringBoot
+    - mvn package spring-boot:repackage
+    - mv target/*.jar /target/web-demo.jar
+
+maven-deploy:   #this is a JOB
+  stage: mavendeploy  #do make a stage with same name!
+  tags:
+   - backend
+  script:
+    - cd Backend
+    - cd SpringBoot
+    - sudo systemctl stop system-web-demo
+    - sudo systemctl start system-web-demo
+
+
+
+android-build:
+  image: gjandres/android-ci:latest
+  stage: androidbuild
+  before_script:
+    - export GRADLE_USER_HOME=pwd/.gradle
+    - chmod +x ./Backend/DuongVu/gradlew
+  tags:
+   - android_tag
+  script:
+    - cd Backend/DuongVu
+    - ./gradlew build
+  artifacts:
+    paths:
+    - Frontend/app/build/outputs/
+
+android-test:
+  image: gjandres/android-ci:latest
+  stage: androidtest
+  before_script:
+    - export GRADLE_USER_HOME=pwd/.gradle
+    - chmod +x ./Backend/DuongVu/gradlew
+  tags:
+   - android_tag
+  script:
+    - cd Backend/DuongVu
+    - ./gradlew test
+
+  
+
