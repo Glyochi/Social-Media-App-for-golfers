@@ -1,0 +1,9 @@
+com.example.springboot
+com.example.springboot.Controllers
+com.example.springboot.Controllers.User_Group
+com.example.springboot.Controllers.User_Post
+com.example.springboot.Controllers.User_User
+com.example.springboot.Models
+com.example.springboot.Models.Exception
+com.example.springboot.Repositories
+com.example.springboot.Services
